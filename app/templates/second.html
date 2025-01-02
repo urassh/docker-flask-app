@@ -9,6 +9,10 @@
 <body>
     <div class="container">
         <h1>Welcome to Second View</h1>
+
+        <form action="{{ url_for('index') }}" method="get">
+            <button type="submit">Go to Home</button>
+        </form>
     </div>
 </body>
 </html>
