@@ -10,6 +10,10 @@
     <div class="container">
         <h1>Welcome to Flask with PostgreSQL App</h1>
         <p>This is a simple web app</p>
+
+        <form action="{{ url_for('show_second') }}" method="get">
+            <button type="submit">Go to Second Page!!</button>
+        </form>
     </div>
 </body>
 </html>
