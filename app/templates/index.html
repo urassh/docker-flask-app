@@ -19,6 +19,11 @@
 
         <div class="memos">
             <h2 class="title-border">メモった課題</h2>
+
+            {% if not memos %}
+                <p>まだメモがありません。</p>
+            {% endif %}
+ 
             <ul>
                 {% for memo in memos %}
                 <li class="card">
