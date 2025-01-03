@@ -23,7 +23,7 @@
                 {% for memo in memos %}
                 <li class="card">
                     <a href="{{ url_for('view_memo', memo_id=memo.id) }}">{{ memo.title }}</a>
-                    <p>作成日: {{ memo.created_at.strftime('%Y年 %m月 %d日 %H:%M') }}</p>
+                    <p class="small">作成日: {{ memo.created_at.strftime('%Y年 %m月 %d日 %H:%M') }}</p>
                 </li>
                 {% endfor %}
             </ul>

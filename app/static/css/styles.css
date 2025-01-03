@@ -72,6 +72,11 @@ textarea {
     border-bottom: 2px solid #333333bd;
 }
 
+.small {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
 .modern-form {
     margin: 0 auto;
     padding: 20px;
