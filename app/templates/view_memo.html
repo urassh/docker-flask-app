@@ -10,7 +10,7 @@
     <h1>{{ memo.title }}</h1>
     <p>{{ memo.content }}</p>
     <p><em>Created at: {{ memo.created_at }}</em></p>
-    <form method="POST" action="{{ url_for('delete_memo', memo_id=memo.id) }}">
+    <form method="DELETE" action="{{ url_for('delete_memo', memo_id=memo.id) }}">
         <button type="submit">Delete Memo</button>
     </form>
     <a href="{{ url_for('index') }}">Back to Memo List</a>
