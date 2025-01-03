@@ -72,7 +72,7 @@ textarea {
     border-bottom: 2px solid #333333bd;
 }
 
-form {
+.modern-form {
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -80,20 +80,20 @@ form {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form label {
+.modern-form label {
     display: block;
     margin-bottom: 8px;
     font-size: 14px;
     font-weight: 600;
 }
 
-form textarea {
+.modern-form textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-form input[type="text"],
-form textarea {
+.modern-form input[type="text"],
+.modern-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -106,14 +106,14 @@ form textarea {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-form input[type="text"]:focus,
-form textarea:focus {
+.modern-form input[type="text"]:focus,
+.modern-form textarea:focus {
     border-color: #007aff;
     box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
     outline: none;
 }
 
-form button {
+.modern-form button {
     display: inline-block;
     width: 100%;
     border: none;
@@ -127,10 +127,10 @@ form button {
     transition: background-color 0.2s;
 }
 
-form button:hover {
+.modern-form button:hover {
     background-color: #005bb5;
 }
 
-form button:active {
+.modern-form button:active {
     background-color: #003e8f;
 }
