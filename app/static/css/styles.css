@@ -36,7 +36,6 @@ textarea {
 }
 
 .button {
-  background-color: initial;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
   cursor: pointer;
