@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Memo App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Flask with PostgreSQL App</h1>
-        <p>This is a simple web app</p>
-
-        <form action="{{ url_for('show_second') }}" method="get">
-            <button type="submit">Go to Second Page!!</button>
-        </form>
-    </div>
+    <h1>Memo List</h1>
+    <a href="{{ url_for('create_memo') }}">Create New Memo</a>
+    <ul>
+        {% for memo in memos %}
+        <li>
+            <a href="{{ url_for('view_memo', memo_id=memo.id) }}">{{ memo.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
