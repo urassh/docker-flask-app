@@ -15,6 +15,16 @@ ul {
     list-style-type: none;
 }
 
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
 /* common css */
 .container {
     margin: 40px auto;
@@ -29,7 +39,6 @@ ul {
   background-color: initial;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-  color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
   height: 44px;
