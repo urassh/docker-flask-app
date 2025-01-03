@@ -1,0 +1,41 @@
+/* index css */
+#index {
+    h1 {
+        text-align: center;
+    }
+
+    .sub-title {
+        margin-top: 4px;
+        margin-bottom: 16px;
+        text-align: center;
+        font-style: italic;
+        opacity: 0.8;
+    }
+
+    .button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-image: linear-gradient(-180deg, #00D775, #00BD68);
+        color: #FFF;
+    }
+
+    .button:hover {
+        background: #00bd68;
+    }
+
+    .fas {
+        color: #FFF;
+    }
+
+    .card {
+        margin-bottom: 24px;
+        text-align: left;
+
+        a {
+            font-size: large;
+            font-weight: bold;
+            text-decoration: solid;
+            margin-bottom:4px;
+        }
+    }
+}
