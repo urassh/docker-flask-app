@@ -15,16 +15,19 @@ git clone https://github.com/urassh/docker-flask-app/
 
 ### Step1: 簡単なAPIを作ってみよう!!
 - Step1を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v1.0)から、コードをダウンロードしよう!!
+- gitの扱いに慣れている方は、cloneしたあとに`tx-v1`ブランチをfetchしても良いです!
 
 ---
 
 ###  Step2: 画面を作ってみよう!!
 - Step2を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v2.0)から、コードをダウンロードしよう!!
+- gitの扱いに慣れている方は、cloneしたあとに`tx-v2`ブランチをfetchしても良いです!
 
 ---
 
 ### Step3: データベースと繋げよう！ [データ取得編]
 - Step3を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v3.0)から、コードをダウンロードしよう!!
+- gitの扱いに慣れている方は、cloneしたあとに`tx-v3`ブランチをfetchしても良いです!
 
 📌 このStepを実施する前に、以下の.envファイルを以下のように作ろう!!
 ##### .envファイルの作成場所
@@ -54,6 +57,7 @@ POSTGRES_HOST=db
 
 ###  Step4: データベースと繋げよう！ [データ追加編]
 - Step4を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v4.0)から、コードをダウンロードしよう!!
+- gitの扱いに慣れている方は、cloneしたあとに`tx-v4`ブランチをfetchしても良いです!
 
 📌 このStepを実施する前に、以下の.envファイルを以下のように作ろう!!
 ##### .envファイルの作成場所
@@ -82,6 +86,7 @@ POSTGRES_HOST=db
 
 ### Step5: データベースと繋げよう！ [データ削除編]
 - Step5を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v5.0)から、コードをダウンロードしよう!!
+- gitの扱いに慣れている方は、cloneしたあとに`tx-v5`ブランチをfetchしても良いです!
 
 📌 このStepを実施する前に、以下の.envファイルを以下のように作ろう!!
 ##### .envファイルの作成場所
