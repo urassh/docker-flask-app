@@ -1,5 +1,7 @@
 # Flask Webアプリ制作講座
 
+<img width="1618" alt="home" src="https://github.com/user-attachments/assets/c6029ef4-3285-47b2-865b-e733e916c085" />
+
 ## 【Flaskで課題メモアプリを作ろう!!】
 
 この講座はプログラミング初心者🔰を対象に、[urassh](https://github.com/urassh)が作成した"Flaskで課題メモアプリを作ろう!!"で使用される教材リポジトリです。
