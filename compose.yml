@@ -1,30 +1,9 @@
 services:
-  db:
-    build:
-      context: ./db
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-    ports:
-      - "${DB_PORT}:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
   web:
-    build:
-      context: ./app
+    build: ./app
     ports:
-      - "${API_PORT}:5000"
+      - "3000:5000"
     environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-      POSTGRES_HOST: ${POSTGRES_HOST}
-      POSTGRES_PORT: ${DB_PORT}
       FLASK_APP: main:app
     volumes:
       - ./app:/app
-    depends_on:
-      - db
-volumes:
-  postgres_data:
