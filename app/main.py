@@ -32,6 +32,12 @@ def index():
     memos = Memo.query.order_by(Memo.created_at.desc()).all()
     return render_template('index.html', memos=memos)
 
+# メモの詳細を表示
+@app.route('/memo/<uuid:memo_id>')
+def view_memo(memo_id):
+    memo = Memo.query.get_or_404(str(memo_id))
+    return render_template('view_memo.html', memo=memo)
+
 # 新しいメモの作成フォームを表示
 @app.route('/create', methods=['GET'])
 def show_create_memo():
@@ -47,19 +53,13 @@ def create_memo():
     db.session.commit()
     return redirect(url_for('index'))
 
-# メモの詳細を表示
-@app.route('/memo/<uuid:memo_id>')
-def view_memo(memo_id):
-    memo = Memo.query.get_or_404(str(memo_id))
-    return render_template('view_memo.html', memo=memo)
-
 # メモを削除
-@app.route('/memo/<uuid:memo_id>/delete', methods=['POST'])
-def delete_memo(memo_id):
-    memo = Memo.query.get_or_404(str(memo_id))
-    db.session.delete(memo)
-    db.session.commit()
-    return redirect(url_for('index'))
+# ===============================
+# エンドポイント /memo/(メモのID)/delete
+# メソッド　　POST
+# 返すもの　index.html (リダイレクト)
+# ===============================
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
