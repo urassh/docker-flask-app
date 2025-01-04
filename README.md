@@ -1,53 +1,78 @@
-## Flask Webアプリ制作講座 「Flaskで課題メモアプリを作ろう!!」
-この講座はプログラミング初心者🔰を対象に、[urassh](https://github.com/urassh)が作成した"Flaskで課題メモアプリを作ろう!!"で使われます。
-教材となるメモアプリのリポジトリです。
-mainブランチの最新は課題メモアプリの完成版なので、最新の完成コードをお求めの際は、mainブランチをcloneすると入手できます!!
+# Flask Webアプリ制作講座
+
+## 【Flaskで課題メモアプリを作ろう!!】
+
+この講座はプログラミング初心者🔰を対象に、[urassh](https://github.com/urassh)が作成した"Flaskで課題メモアプリを作ろう!!"で使用される教材リポジトリです。
+
+### ☑ 最新コードの取得
+このリポジトリの`main`ブランチには課題メモアプリの完成版が含まれています。以下のコマンドで最新の完成コードを取得できます:
+
 ```bash
 git clone https://github.com/urassh/docker-flask-app/
 ```
-===構成===
-- バックエンド : Flask (Python)
-- データベース : PostgreSQL
-- 環境構築 : Docker
-
-=========
-
-※ なおこの講座はDockerのインストールが前提となっております。(予め[Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)などをインストールしておきましょう!!)
-
-現在はZennにて、本を執筆中です!!
-
 
 ---
 
-### Step1: 簡単なAPIを作ってみよう!!
-- Step1を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v1.0)から、コードをダウンロードしよう!!
-- gitの扱いに慣れている方は、cloneしたあとに`tx-v1`ブランチをfetchしても良いです!
+## プロジェクト構成
+
+- **バックエンド:** Flask (Python)
+- **データベース:** PostgreSQL
+- **環境構築:** Docker
 
 ---
 
-###  Step2: 画面を作ってみよう!!
-- Step2を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v2.0)から、コードをダウンロードしよう!!
-- gitの扱いに慣れている方は、cloneしたあとに`tx-v2`ブランチをfetchしても良いです!
+### ⚠ 前提条件
+- この講座を進めるには、事前に[Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)をインストールしておいてください。
+- 現在、この講座に関連する本を[Zenn](https://zenn.dev/urassh)で執筆中です！
 
 ---
 
-### Step3: データベースと繋げよう！ [データ取得編]
-- Step3を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v3.0)から、コードをダウンロードしよう!!
-- gitの扱いに慣れている方は、cloneしたあとに`tx-v3`ブランチをfetchしても良いです!
+## 講座ステップ
 
-📌 このStepを実施する前に、以下の.envファイルを以下のように作ろう!!
-##### .envファイルの作成場所
+### Step 1: 簡単なAPIを作ってみよう!!
+- **コードダウンロード:** [Step 1 コード](https://github.com/urassh/docker-flask-app/releases/tag/tx-v1.0)
+- **Git操作に慣れている方:**
+  ```bash
+  git fetch origin tx-v1
+  git checkout tx-v1
+  ```
+
+---
+
+### Step 2: 画面を作ってみよう!!
+- **コードダウンロード:** [Step 2 コード](https://github.com/urassh/docker-flask-app/releases/tag/tx-v2.0)
+- **Git操作に慣れている方:**
+  ```bash
+  git fetch origin tx-v2
+  git checkout tx-v2
+  ```
+
+---
+
+### Step 3: データベースと繋げよう！ [データ取得編]
+- **コードダウンロード:** [Step 3 コード](https://github.com/urassh/docker-flask-app/releases/tag/tx-v3.0)
+- **Git操作に慣れている方:**
+  ```bash
+  git fetch origin tx-v3
+  git checkout tx-v3
+  ```
+
+#### 📌 `.env`ファイルを作成しよう
+
+**配置場所:**
 ```
 .
 ├── .env
+├── app/
+├── db/
 ├── .gitignore
 ├── Dockerfile
 ├── README.md
 └── compose.yml
 ```
 
-##### .envファイル
-```.env
+**内容:**
+```dotenv
 # COMMON
 API_PORT=3000
 DB_PORT=5432
@@ -61,23 +86,30 @@ POSTGRES_HOST=db
 
 ---
 
-###  Step4: データベースと繋げよう！ [データ追加編]
-- Step4を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v4.0)から、コードをダウンロードしよう!!
-- gitの扱いに慣れている方は、cloneしたあとに`tx-v4`ブランチをfetchしても良いです!
+### Step 4: データベースと繋げよう！ [データ追加編]
+- **コードダウンロード:** [Step 4 コード](https://github.com/urassh/docker-flask-app/releases/tag/tx-v4.0)
+- **Git操作に慣れている方:**
+  ```bash
+  git fetch origin tx-v4
+  git checkout tx-v4
+  ```
 
-📌 このStepを実施する前に、以下の.envファイルを以下のように作ろう!!
-##### .envファイルの作成場所
+#### 📌 `.env`ファイルを作成しよう
+
+**配置場所:**
 ```
 .
 ├── .env
+├── app/
+├── db/
 ├── .gitignore
 ├── Dockerfile
 ├── README.md
 └── compose.yml
 ```
 
-##### .envファイル
-```.env
+**内容:**
+```dotenv
 # COMMON
 API_PORT=3000
 DB_PORT=5432
@@ -88,25 +120,33 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=guest
 POSTGRES_HOST=db
 ```
+
 ---
 
-### Step5: データベースと繋げよう！ [データ削除編]
-- Step5を実施する時は、[こちら](https://github.com/urassh/docker-flask-app/releases/tag/tx-v5.0)から、コードをダウンロードしよう!!
-- gitの扱いに慣れている方は、cloneしたあとに`tx-v5`ブランチをfetchしても良いです!
+### Step 5: データベースと繋げよう！ [データ削除編]
+- **コードダウンロード:** [Step 5 コード](https://github.com/urassh/docker-flask-app/releases/tag/tx-v5.0)
+- **Git操作に慣れている方:**
+  ```bash
+  git fetch origin tx-v5
+  git checkout tx-v5
+  ```
 
-📌 このStepを実施する前に、以下の.envファイルを以下のように作ろう!!
-##### .envファイルの作成場所
+#### 📌 `.env`ファイルを作成しよう
+
+**配置場所:**
 ```
 .
 ├── .env
+├── app/
+├── db/
 ├── .gitignore
 ├── Dockerfile
 ├── README.md
 └── compose.yml
 ```
 
-##### .envファイル
-```.env
+**内容:**
+```dotenv
 # COMMON
 API_PORT=3000
 DB_PORT=5432
@@ -117,9 +157,4 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=guest
 POSTGRES_HOST=db
 ```
----
-
-
-
-
 
