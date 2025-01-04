@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from app.models import db, Memo
 from dotenv import load_dotenv
 import os
+from uuid import UUID
 
 # .envファイルを読み込む
 load_dotenv()
@@ -47,15 +48,15 @@ def create_memo():
     return redirect(url_for('index'))
 
 # メモの詳細を表示
-@app.route('/memo/<int:memo_id>')
+@app.route('/memo/<uuid:memo_id>')
 def view_memo(memo_id):
-    memo = Memo.query.get_or_404(memo_id)
+    memo = Memo.query.get_or_404(str(memo_id))
     return render_template('view_memo.html', memo=memo)
 
 # メモを削除
-@app.route('/memo/<int:memo_id>/delete', methods=['POST'])
+@app.route('/memo/<uuid:memo_id>/delete', methods=['POST'])
 def delete_memo(memo_id):
-    memo = Memo.query.get_or_404(memo_id)
+    memo = Memo.query.get_or_404(str(memo_id))
     db.session.delete(memo)
     db.session.commit()
     return redirect(url_for('index'))
