@@ -9,18 +9,14 @@
 </head>
 <body>
     <div id="view_memo" class="container">
-        <h1 class="title-border">{{ memo.title }}</h1>
+        <h1 class="title-border">プロジェクト提案書提出</h1>
 
         <div class="contents">
-            <p>{{ memo.content }}</p>
-            <p class="small">作成日: {{ memo.created_at.strftime('%Y年 %m月 %d日 %H:%M') }}</p>
+            <p>講義内で制作するシステムの提案書をA4で3枚以内にまとめる。</p>
+            <p class="small">作成日: 2025年 1月 6日 17:10</p>
         </div>
 
-        <form method="POST" action="{{ url_for('delete_memo', memo_id=memo.id) }}">
-            <button type="submit" class="delete button">メモを削除</button>
-        </form>
-
-        <a href="{{ url_for('index') }}" class="button">メモ一覧に戻る</a>
+        <a href="#" class="button">メモ一覧に戻る</a>
     </div>
 </body>
 </html>
