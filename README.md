@@ -9,6 +9,7 @@ git clone https://github.com/urassh/docker-flask-app/
 - バックエンド : Flask (Python)
 - データベース : PostgreSQL
 - 環境構築 : Docker
+
 =========
 
 ※ なおこの講座はDockerのインストールが前提となっております。(予め[Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)などをインストールしておきましょう!!)
