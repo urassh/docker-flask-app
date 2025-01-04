@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大学の課題 メモる君</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
@@ -13,24 +12,24 @@
         <h1>大学の課題 メモる君</h1>
         <p class="sub-title">〜 課題を忘れないあなたのリマインダーアプリ 〜</p>
 
-        <a href="{{ url_for('create_memo') }}" class="button">
-            <i class="fas fa-pencil-alt"></i> メモを作る
-        </a>
-
         <div class="memos">
             <h2 class="title-border">メモった課題</h2>
-
-            {% if not memos %}
-                <p>まだメモがありません。</p>
-            {% endif %}
  
             <ul>
-                {% for memo in memos %}
                 <li class="card">
-                    <a href="{{ url_for('view_memo', memo_id=memo.id) }}">{{ memo.title }}</a>
-                    <p class="small">作成日: {{ memo.created_at.strftime('%Y年 %m月 %d日 %H:%M') }}</p>
+                    <a href="#">プログラミング課題 コードレビュー</a>
+                    <p class="small">作成日: 2025年 1月 15日 15:32</p>
                 </li>
-                {% endfor %}
+
+                <li class="card">
+                    <a href="#">レポート提出</a>
+                    <p class="small">作成日: 2025年 1月 10日 13:15</p>
+                </li>
+
+                <li class="card">
+                    <a href="#">プロジェクト提案書提出</a>
+                    <p class="small">作成日: 2025年 1月 6日 17:10</p>
+                </li>
             </ul>
         </div>
     </div>
