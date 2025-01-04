@@ -1,6 +1,10 @@
 ## Flask Webアプリ制作講座 「Flaskで課題メモアプリを作ろう!!」
 この講座はプログラミング初心者🔰を対象に、[urassh](https://github.com/urassh)が作成した"Flaskで課題メモアプリを作ろう!!"で使われます。
 教材となるメモアプリのリポジトリです。
+mainブランチの最新は課題メモアプリの完成版なので、最新の完成コードをお求めの際は、mainブランチをcloneすると入手できます!!
+```bash
+git clone https://github.com/urassh/docker-flask-app/
+```
 
 ※ なおこの講座はDockerのインストールが前提となっております。(予め[Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)などをインストールしておきましょう!!)
 
