@@ -5,6 +5,11 @@ mainブランチの最新は課題メモアプリの完成版なので、最新�
 ```bash
 git clone https://github.com/urassh/docker-flask-app/
 ```
+===構成===
+- バックエンド : Flask (Python)
+- データベース : PostgreSQL
+- 環境構築 : Docker
+=========
 
 ※ なおこの講座はDockerのインストールが前提となっております。(予め[Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)などをインストールしておきましょう!!)
 
