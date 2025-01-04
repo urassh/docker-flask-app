@@ -11,13 +11,8 @@
     <div id="create_memo" class="container">
         <h1 class="title-border">課題メモ - 新規作成</h1>
 
-        <form action="{{ url_for('create_memo') }}" method="POST" class="modern-form">
-            <label for="title">課題メモ名</label>
-            <input type="text" id="title" name="title" required>
-            <label for="content">メモ詳細 (授業名など)</label>
-            <textarea id="content" name="content" required></textarea>
-            <button type="submit" class="button">メモを保存</button>
-        </form>
+        <!-- ここで新しいメモを作成し、POSTメソッドでリクエストを送ります。 -->
+        
 
         <a href="{{ url_for('index') }}" class="button">メモ一覧に戻る</a>
     </div>

@@ -16,10 +16,6 @@
             <p class="small">作成日: {{ memo.created_at.strftime('%Y年 %m月 %d日 %H:%M') }}</p>
         </div>
 
-        <form method="POST" action="{{ url_for('delete_memo', memo_id=memo.id) }}">
-            <button type="submit" class="delete button">メモを削除</button>
-        </form>
-
         <a href="{{ url_for('index') }}" class="button">メモ一覧に戻る</a>
     </div>
 </body>
