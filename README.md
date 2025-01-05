@@ -2,9 +2,9 @@
 
 <img width="1618" alt="home" src="https://github.com/user-attachments/assets/c6029ef4-3285-47b2-865b-e733e916c085" />
 
-## 【Flaskで課題メモアプリを作ろう!!】
+## 【作って学ぼう】Flask Webアプリ開発入門 ~課題メモアプリ~
 
-この講座はプログラミング初心者🔰を対象に、[urassh](https://github.com/urassh)が作成した"Flaskで課題メモアプリを作ろう!!"で使用される教材リポジトリです。
+この講座はプログラミング初心者🔰を対象に、[urassh](https://github.com/urassh)が作成した[【作って学ぼう】Flask Webアプリ開発入門 ~課題メモアプリ~](https://zenn.dev/urassh/books/fec2793bf80acd)で使用される教材リポジトリです。
 
 ### ☑ 最新コードの取得
 このリポジトリの`main`ブランチには課題メモアプリの完成版が含まれています。以下のコマンドで最新の完成コードを取得できます:
