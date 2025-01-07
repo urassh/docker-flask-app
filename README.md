@@ -25,7 +25,26 @@ git clone https://github.com/urassh/docker-flask-app/
 
 ### ⚠ 前提条件
 - この講座を進めるには、事前に[Docker Desktop](https://www.docker.com/ja-jp/products/docker-desktop/)をインストールしておいてください。
-- 現在、この講座に関連する本を[Zenn](https://zenn.dev/urassh)で執筆中です！
+
+---
+
+## 起動方法
+- このプロジェクトではDockerを使用しているので、`docker`コマンドを使います。
+
+### 起動
+```bash
+docker compose up
+```
+
+### 更新ビルド
+```bash
+docker compose up --build -d
+```
+
+### コンテナ削除(作業終了したら...)
+```bash
+docker compose down --rmi all
+```
 
 ---
 
